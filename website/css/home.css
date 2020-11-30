@@ -144,6 +144,9 @@ h5{
     h3{
         text-align: left;
     }
+    h5{
+        display:none;
+    }
     
 }
 @media only screen and (min-width:679px) and (max-width:768px){
@@ -170,6 +173,9 @@ h5{
     }
     .butt{
         display: block;
+    }
+    h5{
+        display:none;
     }
 }
 @media only screen and (min-width:320px) and (max-width:678px){
