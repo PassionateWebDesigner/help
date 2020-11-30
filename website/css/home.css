@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+#loader{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    margin: -95px 0 0 -95px;
+    /*border: 16px solid #f3f3f3;*/
+    border-radius: 50%;
+    /*border-top: 16px solid #3498db;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;*/
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-15px);
+    }
+    15%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(25px);
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    35%{
+        transform: translateY(15px);
+    }
+    40%{
+        transform: translateY(-8px);
+    }
+    45%{
+        transform: translateY(0px);
+    }
+    55%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+
+#myDiv{
+    display: none;
+    text-align: left;
+}
+a.navbar-brand{
+    font-family: cursive;
+    font-size:1.6em;
+    font-weight: bold;
+}
+#head:hover{
+    color: rgb(135, 241, 13);
+}
+li a.nav-link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-control{
+    margin-left: 230px;
+}
+.para1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.para2{
+    color: #ff0d66;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+h3{
+    margin-bottom: 20px;
+}
+video{
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    display: block;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+.from-left{
+    grid-column: 2/3;
+    transform:translateX(-50%);
+}
+.from-right{
+    grid-column:3/4;
+    transform:translateX(50%);
+}
+.from-left,
+.from-right{
+    transition:transform 500ms ease-in;
+}
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0%);
+}
+.voice{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: rgb(160, 107, 142);
+}
+h5{
+    margin-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    a.navbar-brand{
+        font-size: 1.6em;
+    }
+    .main{
+        display: none;
+    }
+    .form-control{
+        margin-left: 0;
+    }
+    #main{
+        margin-top: 10px;
+    }
+    video{
+        margin-left: 200px;
+    }
+    .para2{
+        padding: 20px;
+    }
+    .btn-success{
+        margin-left:5px;
+    }
+    h3{
+        text-align: left;
+    }
+    
+}
+@media only screen and (min-width:679px) and (max-width:768px){
+    #hide{
+        display: none;
+    }
+    .btn-success{
+        margin-left:5px;
+    }
+    .main{
+        display: block;
+    }
+    video{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .para2{
+        padding: 20px;
+    }
+    h3{
+        text-align: center;
+        padding-top: 5px;
+    }
+    .butt{
+        display: block;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:678px){
+    .foot{
+        height:50px;
+        width: 50px;
+    }
+    .form-control{
+        margin-left: 0;
+        width: 150px;
+    }
+    .btn-success{
+        margin-left:10px;
+    }
+    video{
+        height: 170px;
+        width: 270px;
+        display: block;
+        margin: auto;
+    }
+    .para2{
+        padding: 20px;
+    }
+    .butt{
+        display: block;
+    }
+}

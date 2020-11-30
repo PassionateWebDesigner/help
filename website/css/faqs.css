@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+#loader {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 1;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#myDiv{
+    display: none;
+    text-align: left;
+}
+a.navbar-brand{
+    font-family: cursive;
+    font-size:1.6em;
+    font-weight: bold;
+}
+#head:hover{
+    color: rgb(135, 241, 13);
+}
+li a.nav-link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-control{
+    margin-left: 230px;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+.from-left{
+    grid-column: 2/3;
+    transform:translateX(-50%);
+}
+.from-right{
+    grid-column:3/4;
+    transform:translateY(0%);
+}
+.from-left,
+.from-right{
+    transition:transform 500ms ease-in;
+}
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    a.navbar-brand{
+        font-size: 1.6em;
+    }
+    .main{
+        display: none;
+    }
+    .form-control{
+        margin-left: 0;
+    }
+    #main{
+        margin-top: 10px;
+    }
+    .btn-success{
+        margin-left:5px;
+    }
+}
+@media only screen and (min-width:679px) and (max-width:768px){
+    #hide{
+        display: none;
+    }
+    .btn-success{
+        margin-left:5px;
+    }
+    .main{
+        display: block;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:678px){
+    .foot{
+        height:50px;
+        width: 50px;
+    }
+    .form-control{
+        margin-left: 0;
+        width: 150px;
+    }
+    .btn-success{
+        margin-left:10px;
+    }
+    .img2{
+        display: none;
+    }
+}
